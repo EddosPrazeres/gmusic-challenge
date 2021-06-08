@@ -1,7 +1,14 @@
 import * as React from "react";
 import { ITextLayout } from "../data";
-export const Text: React.FC<ITextLayout> = ({  
-  ...props
-}) => (
-  <span  {...props} />
-);
+
+import './styles.scss'
+
+export function Text({ title= "HomeView", ...props }: ITextLayout) {
+  return (
+    <span 
+      className="Text"
+      {...props}>
+        {title}
+    </span>
+  )
+}
