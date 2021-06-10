@@ -1,9 +1,11 @@
 import React from 'react';
 import Routes from './routes';
-
+import { GlobalProvider } from './components'
 function App() {
   return (
-    <Routes />
+    <GlobalProvider>
+      <Routes />
+    </GlobalProvider>
   );
 }
 

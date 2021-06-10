@@ -18,7 +18,7 @@ class Routes extends React.Component<{}, IState> {
       <BrowserRouter>
         <Switch>
             <Route exact={true} path={Paths.HOME} component={views.HomeView}/>
-            <Route path={Paths.DETAILS} component={views.DetailsView}/>
+            <Route path={`${Paths.DETAILS}/:id`} component={views.DetailsView}/>
             <Redirect to={Paths.HOME} />
           </Switch>
       </BrowserRouter>

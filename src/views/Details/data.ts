@@ -1,9 +1,12 @@
 export default interface IDetails {
    data?: any;
+   match?: any
+   user: any;
+   userRepositories?: any;
 }
   
 export interface IDetailsLayout extends IDetails {
-   title: any;
+
 }
   
 
