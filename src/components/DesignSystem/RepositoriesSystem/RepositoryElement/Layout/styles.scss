@@ -1,0 +1,17 @@
+.RepositoryElement { 
+    display: flex;
+    flex-direction: column;
+    
+
+    &-content {
+        margin: 16px 0;
+    }
+
+    &:not(&:first-child) {
+        padding-top: 24px;
+    }
+
+    &:not(&:last-child) {
+        border-bottom: 4px solid #cecece;
+    }
+}
