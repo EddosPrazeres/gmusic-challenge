@@ -7,7 +7,7 @@ export function CardElement({ title, value }: ICardElementLayout) {
   return (
     <div className="CardElement">
       <Text title={title} size="small" font="bold"/> 
-      <Text title={value} size="small"/> 
+      <Text title={value} size="smaller"/> 
     </div>
   )
 }

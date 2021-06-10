@@ -1,7 +1,12 @@
 export interface IRepositoryElement { 
-  ListElements: any;
+  name: string;
+  description: string;
+  size: string;
+  language: string;
+  open_issues: string;
+  html_url: string;
 }
 
-export interface IRepositoryElementLayout extends IRepositoryElement {  
-  
+export interface IRepositoryElementLayout extends IRepositoryElement {
+
 }

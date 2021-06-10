@@ -1,11 +1,27 @@
 import * as React from 'react';
+import { useUser } from '../../../../hooks';
 import { ICardDetails, IupdateProfileJSON } from './data';
 import { CardDetails as Layout } from './Layout';
 
 export default function CardDetails(props: ICardDetails){
   const { title } = props
+  const { userRepositories } = useUser()
 
-  const returnCurrentJSON = () => title ? updateGitJSON() : updateProfileJSON({}) 
+  const returnCurrentJSON = () => title ? updateGitJSON() : updateProfileJSON(props) 
+
+  const SumRepositories = () => {
+    let result = userRepositories.reduce((acc: any, curr: any) => {
+      acc = {
+        size: acc.size + curr.size,
+        language: `${curr.language}, ${acc.language}`,
+        open_issues: acc.open_issues + curr.open_issues            
+      }
+      
+      return acc
+    }, {size: 0, language: "", open_issues: 0});
+    
+    return result
+  }
 
   const updateProfileJSON = ({name, bio, location}: IupdateProfileJSON) => (
     [
@@ -28,15 +44,15 @@ export default function CardDetails(props: ICardDetails){
     [
       {
         title: "Tamanho total",
-        value: "123456 bytes",
+        value: `${SumRepositories().size} bytes`,
       },
       {
         title: "Linguagens",
-        value: "C# (1), Java(2), Python(3)",
+        value: `${SumRepositories().language}`,
       },
       {
         title: "Issues abertos",
-        value: "1234",
+        value: `${SumRepositories().open_issues}`,
       }
     ]
   )
