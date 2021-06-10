@@ -1,6 +1,7 @@
 .DetailsView {
     display: flex;
-    flex: 1;
-    background-color: black;
-    color: white;
+    flex-direction: column;    
+    min-height: 100vh;
+    background-color: #ececec;
+    padding: 72px 16px 16px;
 }
