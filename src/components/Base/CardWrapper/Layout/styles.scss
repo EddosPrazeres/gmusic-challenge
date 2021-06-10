@@ -1,0 +1,21 @@
+.CardWrapper { 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    opacity: 100%;    
+    transition: all ease 200ms;
+    color: inherit !important;
+    text-decoration: none; 
+
+    &[href^="details"] {
+        cursor: pointer;
+
+        &:hover {        
+            background-color: #e0e0e0;
+        }
+    }
+
+}

@@ -1,15 +1,23 @@
 export interface IText { 
   title?: string;
+  size?: IFontSize;
+  font?: IFont
 }
 
 export interface ITextLayout extends IText {  
-  fontSize?: string;
+  
 }
 
+export type IFont = "normal" | "lighter" | "bold" | "bolder";
 
-export enum FontSize {
-  tiny = '10px',
-  small = '13px',  
-  medium = '16px',
-  large = "18px"
-}
+export type IFontSize =
+  | "tiny"
+  | "xsmall"
+  | "smaller"
+  | "small"
+  | "default"
+  | "medium"
+  | "big"
+  | "large"
+  | "larger"
+  | "xlarge";
