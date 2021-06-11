@@ -18,6 +18,7 @@ Este desafio se refere ao desenvolvimento de uma aplicação em em React que fun
   - ContextAPI
   - Hooks
   - Tests
+  - Paginação
 
 ##### Contexto da estrutura
 Essa estrutura é uma variação de Domain-driven design com o objetivo de facilitar ainda mais o desenvolvimento, manutenção e escalabilidade. Cada `pasta` é responsável por seu próprio contexto e cada `arquivo` tem sua própria responsabilidade formando uma estrutura escável e manutenivel, neste projeto ainda não foi possível mostrar o melhor dessa estrutura que se potencializa com a escalabidade e a generalização de responsabilidades.
