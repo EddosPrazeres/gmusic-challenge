@@ -5,10 +5,11 @@ Este desafio se refere ao desenvolvimento de uma aplicação em em React que fun
 
 | FullHD | Mobile |
 | ------ | ------ |
-| ![Alt text](https://i.ibb.co/bmW5c0G/Captura-de-Tela-2021-06-11-a-s-11-56-40.png "Title") | ![Alt text](https://i.ibb.co/SQd2wmr/Captura-de-Tela-2021-06-11-a-s-11-57-05.png "Title") |
-| ![Alt text](https://i.ibb.co/jzMxbhs/Captura-de-Tela-2021-06-11-a-s-12-11-06.png "Title") | ![Alt text](https://i.ibb.co/kcZpn1B/Captura-de-Tela-2021-06-11-a-s-11-57-39.png "Title") |
-| ![Alt text](https://i.ibb.co/GQxs4pW/Captura-de-Tela-2021-06-11-a-s-11-58-18.png "Title") | ![Alt text](https://i.ibb.co/6J0cH03/Captura-de-Tela-2021-06-11-a-s-11-57-55.png "Title") |
-| ![Alt text](https://i.ibb.co/hYvhHLS/Captura-de-Tela-2021-06-11-a-s-12-09-44.png "Title") | ![Alt text](https://i.ibb.co/pwC2HrV/Captura-de-Tela-2021-06-11-a-s-11-58-07.png "Title") |
+| ![Alt text](https://i.ibb.co/bmW5c0G/Captura-de-Tela-2021-06-11-a-s-11-56-40.png "Lista") | ![Alt text](https://i.ibb.co/SQd2wmr/Captura-de-Tela-2021-06-11-a-s-11-57-05.png "Lista") |
+| ![Alt text](https://i.ibb.co/jzMxbhs/Captura-de-Tela-2021-06-11-a-s-12-11-06.png "Pesquisa") | ![Alt text](https://i.ibb.co/kcZpn1B/Captura-de-Tela-2021-06-11-a-s-11-57-39.png "Pesquisa") |
+| ![Alt text](https://i.ibb.co/0FP4K89/Captura-de-Tela-2021-06-11-a-s-13-21-32.png "Pesquisa sem resultado") | ![Alt text](https://i.ibb.co/wL6sW2D/Captura-de-Tela-2021-06-11-a-s-13-21-41.png "Pesquisa sem resultado") |
+| ![Alt text](https://i.ibb.co/GQxs4pW/Captura-de-Tela-2021-06-11-a-s-11-58-18.png "Detalhes do Usuário") | ![Alt text](https://i.ibb.co/6J0cH03/Captura-de-Tela-2021-06-11-a-s-11-57-55.png "Detalhes do Usuário") |
+| ![Alt text](https://i.ibb.co/hYvhHLS/Captura-de-Tela-2021-06-11-a-s-12-09-44.png "Mais detalhes do usuário") | ![Alt text](https://i.ibb.co/pwC2HrV/Captura-de-Tela-2021-06-11-a-s-11-58-07.png "Mais detalhes do usuário") |
 
 ### Caracteristicas
   - TypeScript
