@@ -10,15 +10,13 @@ Este desafio se refere ao desenvolvimento de uma aplicação em em React que fun
 | ![Alt text](https://i.ibb.co/GQxs4pW/Captura-de-Tela-2021-06-11-a-s-11-58-18.png "Title") | ![Alt text](https://i.ibb.co/6J0cH03/Captura-de-Tela-2021-06-11-a-s-11-57-55.png "Title") |
 | ![Alt text](https://i.ibb.co/hYvhHLS/Captura-de-Tela-2021-06-11-a-s-12-09-44.png "Title") | ![Alt text](https://i.ibb.co/pwC2HrV/Captura-de-Tela-2021-06-11-a-s-11-58-07.png "Title") |
 
-
-
-
 ### Caracteristicas
   - TypeScript
   - Atomic Design
   - Design System
   - ContextAPI
   - Hooks
+  - Tests
 
 ##### Contexto da estrutura
 Essa estrutura é uma variação de Domain-driven design com o objetivo de facilitar ainda mais o desenvolvimento, manutenção e escalabilidade. Cada `pasta` é responsável por seu próprio contexto e cada `arquivo` tem sua própria responsabilidade formando uma estrutura escável e manutenivel, neste projeto ainda não foi possível mostrar o melhor dessa estrutura que se potencializa com a escalabidade e a generalização de responsabilidades.
@@ -75,6 +73,14 @@ Lista dos principais plugins utilizadas no projeto.
     - SASS
     - Jest/Enzyme
     
+    
+### Considerações
+Os testes e a funcionalidade estendida eu acabei deixando para um segundo momento devido ao foco nas demais features, mas fico a disposição para complementa-los. Os testes além do esqueleto básico, eu pretendia fazer:
+- Validação de props obrigatórias e opcional
+- Validação dos retornos e execuções das funções dos componentes, hooks e utils.
+
+Obs.: Em pequenas linhas os meus testes tem como objetivo testar a passagem de propriedades, o resultado esperado de funções com o intuito de prevenir que algo seja modificado sem sabermos ou que usem de forma incorreta para prevenir bug`s.
+
 Licença
 ----
 **Edimilson dos Prazeres Pereira Júrnior** @EddosPrazeres
