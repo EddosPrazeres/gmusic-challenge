@@ -4,8 +4,9 @@ import { useUser } from "../../../hooks";
 import { IHomeLayout } from "../data";
 import './styles.scss'
 
-export default function HomeView({ users }: IHomeLayout) {
+export default function HomeView({ users, hasMore }: IHomeLayout) {
   const { getUsers } = useUser();
+  
   return (
     <div className="HomeView">
         <Header title="Busca de Usuários do Github"/>
@@ -15,7 +16,7 @@ export default function HomeView({ users }: IHomeLayout) {
           ItemComponent={CardUserName}
           link="/details" 
         />
-        <Ancor onClick={getUsers} title="Mostrar mais"/>        
+         {hasMore && <Ancor onClick={getUsers} title="Mostrar mais"/> }
     </div>
   );
 }

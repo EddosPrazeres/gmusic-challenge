@@ -18,6 +18,7 @@ interface IUserContext {
   getRepositories({type, login}: IUser): Promise<any>;
   userRepositories: any;
   userSearched: IArrayUsers;
+  hasNotFound: boolean;
 }
 
 
@@ -34,6 +35,7 @@ export const UserProvider = ({ children }: any) => {
   const [users, setUsers] = useState<IArrayUsers>([] as IArrayUsers);
   const [userSearched, setUserSearched] = useState<IArrayUsers>([] as IArrayUsers);
   const [userRepositories, setUserRepositories ] = useState([])
+  const [hasNotFound, setHasNotFound ] = useState(false)
 
   const getUsers = async (authToken: string) => { 
     try {
@@ -50,8 +52,10 @@ export const UserProvider = ({ children }: any) => {
     try {
       const { data } = await API.get(`users/${term}`)     
       setUserSearched([data])
+      setHasNotFound(false)    
       return userSearched
     } catch (error) {
+      setHasNotFound(true)    
       return "Error: " + error
     }
   }
@@ -61,8 +65,10 @@ export const UserProvider = ({ children }: any) => {
     try {
       const { data } = await API.get(`${typeRepositories}/${login}/repos`) 
       setUserRepositories(data)
+      setHasNotFound(false)    
       return userRepositories
-    } catch (error) {       
+    } catch (error) {   
+      setHasNotFound(true)    
       return "Error: " + error
     }
   }
@@ -71,6 +77,7 @@ export const UserProvider = ({ children }: any) => {
     if (!!term) return 
 
     setUserSearched([])
+    setHasNotFound(false)
   }
 
   const value = {
@@ -81,6 +88,7 @@ export const UserProvider = ({ children }: any) => {
     getRepositories,
     userRepositories,
     userSearched,
+    hasNotFound
   };
 
   return (

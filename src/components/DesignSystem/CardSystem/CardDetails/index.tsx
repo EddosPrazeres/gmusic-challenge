@@ -26,7 +26,7 @@ export default function CardDetails(props: ICardDetails){
   const updateProfileJSON = ({name, bio, location}: IupdateProfileJSON) => (
     [
       {
-        title: "Name",
+        title: "Nome",
         value: name || "Não informado",
       },
       {

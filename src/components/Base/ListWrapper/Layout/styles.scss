@@ -3,3 +3,18 @@
     flex-direction: column;
     margin: 16px 0;
 }
+
+.Empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 64px;
+
+    img {
+        width: 200px;
+        margin-bottom: 16px;
+        border-radius: 20px;
+        opacity: 50%;
+    }
+}

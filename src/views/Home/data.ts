@@ -4,4 +4,5 @@ export default interface IHome {
   
 export interface IHomeLayout extends IHome {
    users: any;
+   hasMore: boolean | undefined
 }

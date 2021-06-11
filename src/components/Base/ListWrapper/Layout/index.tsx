@@ -6,7 +6,7 @@ export function ListWrapper({ ListElements, link, ItemComponent }: IListWrapperL
   return (
     <div className="ListWrapper"> 
       {ListElements.map((item: any) => (
-        <ItemComponent {...item} link={link} />
+        <ItemComponent key={`Item-${Math.random()}`} {...item} link={link} />
       ))}
     </div>
   )

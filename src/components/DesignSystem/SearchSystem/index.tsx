@@ -9,7 +9,7 @@ export default function SearchSystem({...props}: ISearchSystem) {
 
   useEffect(()=> {
     clearSpecificUser(value)
-  }, [value, clearSpecificUser])
+  }, [value])
 
   const onChange = (e: any) => {
     setValue(e.target.value);
