@@ -1,13 +1,9 @@
 import React from "react";
 
-import { StringMap } from "../utils/globalInterfaces";
-import axios from "axios";
 import {
   createContext,
   useContext,
   useState,
-  useCallback,
-  useEffect,
 } from "react";
 
 import {

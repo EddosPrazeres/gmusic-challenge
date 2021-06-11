@@ -1,7 +1,7 @@
 import * as React from "react";
 import { IRepositoryElementLayout } from "../data";
 import './styles.scss'
-import { CardWrapper, ListWrapper, Text, CardElement, Ancor } from '../../../../../components'
+import { Text, CardElement, Ancor } from '../../../../../components'
 
 export function RepositoryElement({ name, description, size, language, open_issues, html_url }: IRepositoryElementLayout) {
   return (

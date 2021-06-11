@@ -1,5 +1,5 @@
 import * as React from "react";
-import { CardWrapper, Text, CardElement, CardUserName, CardDetails, Header, SearchSystem, ListWrapper, Ancor } from "../../../components";
+import { CardUserName, Header, SearchSystem, ListWrapper, Ancor } from "../../../components";
 import { useUser } from "../../../hooks";
 import { IHomeLayout } from "../data";
 import './styles.scss'

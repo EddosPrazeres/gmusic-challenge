@@ -9,7 +9,7 @@ export default function SearchSystem({...props}: ISearchSystem) {
 
   useEffect(()=> {
     clearSpecificUser(value)
-  }, [value])
+  }, [value, clearSpecificUser])
 
   const onChange = (e: any) => {
     setValue(e.target.value);
@@ -18,7 +18,6 @@ export default function SearchSystem({...props}: ISearchSystem) {
     e.preventDefault();
     getSpecificUser(value);
   }
-  
 
   return (
     <Layout {...props} value={value} onChange={onChange} onSubmit={onSubmit}/>

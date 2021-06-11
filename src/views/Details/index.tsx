@@ -4,10 +4,10 @@ import Layout from "./Layout";
 import { useUser } from '../../hooks'
 
 export default function DetailsView(props: IDetails) {
-  const { userSearched, getSpecificUser, users, getRepositories, userRepositories } = useUser();
+  const { userSearched, getSpecificUser, users, getRepositories } = useUser();
   
   useEffect(()=> {   
-    getSpecificUser(props?.match?.params.id)    
+    getSpecificUser(props.match.params.id)    
   }, [])
 
   useEffect(()=> {
@@ -16,7 +16,7 @@ export default function DetailsView(props: IDetails) {
     const { login, type } = userSearched[0];
     
     getRepositories({type, login})    
-  }, [userSearched])
+  }, [userSearched, getRepositories])
 
   return <Layout user={users[0]}/>;
 }

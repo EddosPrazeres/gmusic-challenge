@@ -8,7 +8,7 @@ export function CardUserName({ avatar_url, login, link}: ICardUserNameLayout) {
   return (
     <CardWrapper {...link && {link: `${link}/${id}`}}> 
         <div className="CardUserName">
-          <img className="CardUserName-avatar" src={avatar_url}/>
+          <img alt="avatar" className="CardUserName-avatar" src={avatar_url}/>
           <Text title={login} size="large" />          
         </div>
     </CardWrapper>
