@@ -1,46 +1,80 @@
-# Getting Started with Create React App
+# GMUSIC CHALLENGE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este desafio se refere ao desenvolvimento de uma aplicação em em React que funcione utilizando a API pública do Github.
 
-## Available Scripts
 
-In the project directory, you can run:
+| FullHD | Mobile |
+| ------ | ------ |
+| ![Alt text](https://i.ibb.co/bmW5c0G/Captura-de-Tela-2021-06-11-a-s-11-56-40.png "Title") | ![Alt text](https://i.ibb.co/SQd2wmr/Captura-de-Tela-2021-06-11-a-s-11-57-05.png "Title") |
+| ![Alt text](https://i.ibb.co/jzMxbhs/Captura-de-Tela-2021-06-11-a-s-12-11-06.png "Title") | ![Alt text](https://i.ibb.co/kcZpn1B/Captura-de-Tela-2021-06-11-a-s-11-57-39.png "Title") |
+| ![Alt text](https://i.ibb.co/GQxs4pW/Captura-de-Tela-2021-06-11-a-s-11-58-18.png "Title") | ![Alt text](https://i.ibb.co/6J0cH03/Captura-de-Tela-2021-06-11-a-s-11-57-55.png "Title") |
+| ![Alt text](https://i.ibb.co/hYvhHLS/Captura-de-Tela-2021-06-11-a-s-12-09-44.png "Title") | ![Alt text](https://i.ibb.co/pwC2HrV/Captura-de-Tela-2021-06-11-a-s-11-58-07.png "Title") |
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+### Caracteristicas
+  - TypeScript
+  - Atomic Design
+  - Design System
+  - ContextAPI
+  - Hooks
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### Contexto da estrutura
+Essa estrutura é uma variação de Domain-driven design com o objetivo de facilitar ainda mais o desenvolvimento, manutenção e escalabilidade. Cada `pasta` é responsável por seu próprio contexto e cada `arquivo` tem sua própria responsabilidade formando uma estrutura escável e manutenivel, neste projeto ainda não foi possível mostrar o melhor dessa estrutura que se potencializa com a escalabidade e a generalização de responsabilidades.
 
-### `yarn build`
+### Ambiente para desenvolvimento 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Item | Versão |
+| ------ | ------ |
+| NVM | 0.35.2 |
+| Yarn | 1.22.4 |
+| NPM | 7.10.0 |
+| Node | v16.0.0 |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Configurando ambiente e rodando o projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### Primeira etapa
+- [Homebrew para mac](https://brew.sh/index_pt-br "Instalação")
+- [NVM guia de instalação](https://github.com/nvm-sh/nvm "Instalação")
+- [NodeJS guia de instalação](https://nodejs.org/en/download/package-manager/ "Instalação")
+- [Chocolatey para Windows](https://chocolatey.org/ "Instalação")
+- [ReactJs ](https://reactjs.org/docs/add-react-to-a-new-app.html "Instalação")
+- [Yarn ](https://yarnpkg.com/lang/en/docs/install/#mac-stable "Instalação")
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+##### Segunda etapa
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Configurado o ambiente podemos seguir adiante.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> Baixando o projeto
+```sh
+git clone "REPOSITORIO DO PROJETO"
+cd "PASTA DO PROJETO"
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+##### Terceira etapa
+Está e a última etapa, para rodar o projeto
+> Instalando dependências do projeto e executando o projeto.
+```sh
+yarn install
+yarn start
+```
+ou
+```sh
+npm install
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Plugins
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Lista dos principais plugins utilizadas no projeto.
+    - typescript
+    - Axios
+    - SASS
+    - Jest/Enzyme
+    
+Licença
+----
+**Edimilson dos Prazeres Pereira Júrnior** @EddosPrazeres
